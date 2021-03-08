@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.not-responsive {
+  display: none;
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-content {
+  background: #D1E7DD;
+  color: #0F5132;
+  padding: 1rem !important;
+}
+
+.result {
+  display: none;
+  position: fixed;
+  top: 40%;
+  right: 50%;
+  -webkit-transform: translate(50%, -40%);
+          transform: translate(50%, -40%);
+  z-index: 100;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem 2rem;
+}
+
+.result p, .result button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.result .btn-close:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.result h3.alert-heading {
+  text-align: center;
+}
+
+.action--btns {
+  position: fixed;
+  top: 10%;
+  right: 50%;
+  width: 100vw;
+  -webkit-transform: translate(50%, -10%);
+          transform: translate(50%, -10%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.action--btns button {
+  margin-right: 2rem;
+}
+
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-image: radial-gradient(circle farthest-corner at 5.3% 17.2%, #ffd0fd 0%, #ffedd8 90%);
+}
+
+.main .banks {
+  background-color: #009A16;
+  width: 25vw;
+  height: 270px;
+}
+
+.main .left .banks {
+  border-radius: 0 7px 0 0;
+}
+
+.main .right .banks {
+  border-radius: 7px 0 0 0;
+}
+
+.main .travel {
+  position: relative;
+}
+
+.main .travel .passenger--boat {
+  position: absolute;
+  top: -19px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .travel .passenger--boat .passengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .travel .passenger--boat .boat {
+  width: 200px;
+  height: 40px;
+  border-radius: 0 0 50% 50%;
+  background-color: #715024;
+}
+
+.main .travel .boat--ready {
+  top: -173px;
+}
+
+.main .travel .river {
+  width: 50vw;
+  height: 258px;
+  background-color: #0080be;
+}
+
+.main .peopleOnLeft, .main .peopleOnRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .missionaries, .main .cannibals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .missionarie, .main .cannibal {
+  margin: 5px 5px 0 5px;
+}
+
+.main .missionarie img, .main .cannibal img {
+  width: 25px;
+  height: 150px;
+}
+/*# sourceMappingURL=style.css.map */

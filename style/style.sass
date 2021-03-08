@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+
+@mixin flex($justify,$align)
+    display: flex
+    justify-content: $justify
+    align-items: $align
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Lato', sans-serif
+
+.not-responsive 
+    display: none
+    height: 100vh
+    width: 90%
+    margin: 0 auto
+    @include flex(center,center)
+
+.modal-content
+    background: #D1E7DD
+    color: #0F5132
+    padding: 1rem !important
+
+.result
+    display: none
+    position: fixed
+    top: 40%
+    right: 50%
+    transform: translate(50%,-40%)
+    z-index: 100
+    width: max-content
+    padding: 1rem 2rem
+
+    p,button
+        @include flex(center,center)
+    .btn-close:focus
+        box-shadow: none !important
+
+    h3.alert-heading
+        text-align: center
+
+.action--btns
+    position: fixed
+    top: 10%
+    right: 50%
+    width: 100vw
+    transform: translate(50%,-10%)
+    @include flex(center,center)
+
+    button
+        margin-right: 2rem
+
+.main
+    height: 100vh
+    @include flex(center,flex-end)
+    // background-image: radial-gradient( circle 321px at 8.3% 75.7%, rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% )
+    background-image: radial-gradient( circle farthest-corner at 5.3% 17.2%,  rgba(255,208,253,1) 0%, rgba(255,237,216,1) 90% );
+
+    .banks
+        background-color: #009A16
+        width: 25vw
+        height: 270px
+
+    .left .banks
+        border-radius: 0 7px 0 0
+    .right .banks
+        border-radius: 7px 0 0 0
+
+    .travel
+        position: relative
+        .passenger--boat
+            position: absolute
+            top: -19px
+            right: 0
+            @include flex(center,center)
+            flex-direction: column
+
+            .passengers
+                @include flex(center,center)
+
+            .boat
+                width: 200px
+                height: 40px
+                border-radius: 0 0 50% 50%
+                background-color: #715024
+
+        .boat--ready
+            top: -173px
+
+        .river
+            width: 50vw
+            height: 258px
+            background-color: #0080be
+
+    .peopleOnLeft,.peopleOnRight
+        @include flex(center,center)
+
+    .missionaries,.cannibals
+        @include flex(center,center)
+
+    .missionarie,.cannibal
+        margin: 5px 5px 0 5px
+
+        img
+            width: 25px
+            height: 150px

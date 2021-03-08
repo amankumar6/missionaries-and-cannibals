@@ -1,0 +1,114 @@
+doctype html
+html(lang="en")
+    head
+        //- meta tags
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(property="og:locale" content="en_US")
+        meta(property="og:type" content="website")
+        meta(property="og:site_name" content="Missionaries and Cannibals ")
+        meta(property="og:title" content="Missionaries and Cannibals ")
+        meta(property="og:url" content="boatgame.ml")
+        meta(property="og:description" content="Three missionaries and three cannibals must cross a river using a boat which can carry at most two people, under the constraint that, for both banks, if there are missionaries present on the bank, they cannot be outnumbered by cannibals.")
+        meta(property="og:image" content="http://bp0.blogger.com/_770_Q-_EPr4/SIstIFgXABI/AAAAAAAABAI/8w1wjOudlW4/w1200-h630-p-k-no-nu/canibali.jpg")
+        meta(property="article:publisher" content="boatgame.ml")
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content="@amankumar062")
+        meta(name="twitter:title" content="Missionaries and Cannibals ")
+        meta(name="twitter:description" content="Three missionaries and three cannibals must cross a river using a boat which can carry at most two people, under the constraint that, for both banks, if there are missionaries present on the bank, they cannot be outnumbered by cannibals.")
+        meta(name="twitter:url" content="boatgame.ml")
+        meta(name="author" content="Aman Kumar")
+        meta(name="description" content="Three missionaries and three cannibals must cross a river using a boat which can carry at most two people, under the constraint that, for both banks, if there are missionaries present on the bank, they cannot be outnumbered by cannibals.")
+
+        //- Icon
+        link(rel="icon" href="https://icons-for-free.com/iconfiles/png/512/game+controller+video+game+icon-1320087273514764593.png" type="image/x-icon")
+
+        //- BootStrap CSS
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous")
+
+        //- Stylesheet
+        link(rel="stylesheet" type="text/css" href="style/style.css")
+
+        //- jQuery
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+
+        //- BootStrap JS
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous")
+
+        title Missionaries and Cannibals
+
+    body 
+
+        noscript
+            .alert.alert-danger(role="alert") You need to enable JavaScript to run this app.
+
+        .not-responsive 
+            .alert.alert-danger(role="alert")
+                h4.alert-heading Unexpected Error
+                hr
+                p 
+                    | Sorry! this website is not responsive. You need to use this website on your laptop or any other device which has a width greater than 840px. Actually, the developer is very lazy to make this website responsive. If you want to see some amazing website by the developer then 
+                    a(href="https://github.com/amankumar6") click here
+
+        .responsive
+            .modal.fade#staticBackdrop(data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true")
+                .modal-dialog
+                    .modal-content
+                        .modal-header
+                            h5.modal-title#staticBackdropLabel Rules
+                            button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+
+                        .modal-body Three missionaries and three cannibals must cross a river using a boat which can carry at most two people, under the constraint that, for both banks, if there are missionaries present on the bank, they cannot be outnumbered by cannibals (if they were, the cannibals would eat the missionaries). The boat cannot cross the river by itself with no people on board. People with hat represent missionarie and people with shovel represent cannibal.
+
+            .alert.alert-success.result(role="alert")
+                p   Congratulation! You Won
+
+                p
+                    button.btn.btn-outline-success.reset(type="button") Play Again
+
+            .alert.alert-danger.result(role="alert")
+                p.you-lost  You almost had it!! BLNT
+
+                p
+                    button.btn.btn-outline-danger.reset(type="button") Play Again
+
+            .action--btns 
+                button.btn.btn-outline-success.go(type="button") Go
+                button.btn.btn-outline-danger.reset(type="button") Restart
+                button.btn.btn-outline-info(type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop") Rules
+
+            .main 
+                .left 
+                    .peopleOnLeft
+                        .missionaries
+                        .cannibals
+                    .banks
+
+                .travel 
+
+                    .passenger--boat
+                        .passengers 
+                        .boat
+
+                    .river
+
+                .right 
+                    .peopleOnRight
+                        .missionaries
+                            .missionarie.notOnBoat.people
+                                img(src="https://cdn4.iconfinder.com/data/icons/people-living-in-different-places/248/people-different-places-004-512.png" )
+                            .missionarie.notOnBoat.people
+                                img(src="https://cdn4.iconfinder.com/data/icons/people-living-in-different-places/248/people-different-places-004-512.png" )
+                            .missionarie.notOnBoat.people
+                                img(src="https://cdn4.iconfinder.com/data/icons/people-living-in-different-places/248/people-different-places-004-512.png" )
+                        .cannibals
+                            .cannibal.notOnBoat.people
+                                img(src="https://cdn0.iconfinder.com/data/icons/man-with-gardening-tools-and-equipment/237/man-holding-gardening-tool-equipment-001-512.png")
+                            .cannibal.notOnBoat.people
+                                img(src="https://cdn0.iconfinder.com/data/icons/man-with-gardening-tools-and-equipment/237/man-holding-gardening-tool-equipment-001-512.png")
+                            .cannibal.notOnBoat.people
+                                img(src="https://cdn0.iconfinder.com/data/icons/man-with-gardening-tools-and-equipment/237/man-holding-gardening-tool-equipment-001-512.png")
+
+                    .banks
+
+    script(src="./js/main.js") 
