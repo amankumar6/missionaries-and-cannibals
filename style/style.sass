@@ -11,12 +11,12 @@
     box-sizing: border-box
     font-family: 'Lato', sans-serif
 
-.not-responsive 
+.not-responsive
+    @include flex(center,center)
     display: none
     height: 100vh
     width: 90%
     margin: 0 auto
-    @include flex(center,center)
 
 .modal-content
     background: #D1E7DD
@@ -55,8 +55,7 @@
 .main
     height: 100vh
     @include flex(center,flex-end)
-    // background-image: radial-gradient( circle 321px at 8.3% 75.7%, rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% )
-    background-image: radial-gradient( circle farthest-corner at 5.3% 17.2%,  rgba(255,208,253,1) 0%, rgba(255,237,216,1) 90% );
+    background-image: radial-gradient( circle farthest-corner at 5.3% 17.2%, rgba(255,208,253,1) 0%, rgba(255,237,216,1) 90% )
 
     .banks
         background-color: #009A16
@@ -106,3 +105,9 @@
         img
             width: 25px
             height: 150px
+
+@media screen and ( max-width: 840px )
+    .not-responsive
+        display: flex !important
+    .responsive
+        display: none !important

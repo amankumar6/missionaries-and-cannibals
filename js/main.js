@@ -8,17 +8,6 @@ setInterval(() => {
     else $('.people').css('cursor', 'default ');
 }, 200);
 
-// checking the screen width
-function checkResponsiveness() {
-    if (screen.width <= 840) {
-        $('.responsive').css('display', 'none');
-        $('.not-responsive').css('display', 'flex');
-    } else {
-        $('.responsive').css('display', 'block');
-        $('.not-responsive').css('display', 'none');
-    }
-}
-
 function ride(e) {
     if (clickable) {
         // checking if the selected passenger is on the boat or not
@@ -249,6 +238,3 @@ $(document).ready(function () {
     $('.go').click({ count, offset }, travel);
     $('.reset').click(() => location.reload());
 });
-
-checkResponsiveness();
-$(window).on('resize', checkResponsiveness);
